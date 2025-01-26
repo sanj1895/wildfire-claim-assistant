@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; 
+    background: linear-gradient(135deg, #bbfffd, #c4e3fa); /* Soft gradient background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    background-image: url('/images/path-to-your-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.info-card, .form-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    flex: 1 1 48%;
+    max-width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.info-card:hover, .form-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    background-color: #353a57;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #b0bec5;
+}
+
+/* Form Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #333; 
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #353a57;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #bcd3ea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d4deea;
+}
+
+.container, .legal-guide {
+    max-width: 900px; /
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.accordion {
+    width: 100%;
+    text-align: center; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card, .form-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+

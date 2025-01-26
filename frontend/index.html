@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Insurance Assistance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Emergency Banner -->
+    <div id="emergency-banner">
+        <p><i class="fas fa-exclamation-triangle"></i> Wildfire Update: <span id="fire-alert">Loading latest updates...</span></p>
+    </div>
+
+    <!-- Hero Section (Main Heading, CTA) -->
+    <header>
+        <h1 class="hero-heading">Wildfire Insurance Claims Assistance</h1>
+        <p>We help you file, track, and recover quickly and effectively.</p>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="container">
+
+        <!-- Left Section: Claim Form -->
+        <div class="form-card">
+            <h2>Submit Your Claim</h2>
+            <form id="claimForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="policy" placeholder="Insurance Policy Number" required>
+                <textarea id="damage" placeholder="Describe Your Damage" required></textarea>
+                <input type="number" id="estimated-value" placeholder="Estimated Value of Loss ($)" required>
+                <input type="file" id="proof" name="proof" multiple>
+                <button type="submit">Submit Claim</button>
+            </form>
+        </div>
+
+        <!-- Right Section: Claim Tracking and Resources -->
+        <div class="info-cards">
+            <div class="info-card">
+                <h2>Track Your Claim</h2>
+                <a href="track.html" class="cta-button"><i class="fas fa-search"></i> Track My Claim</a>
+            </div>
+
+            <div class="info-card">
+                <h2>Emergency Contacts</h2>
+                <ul>
+                    <li><a href="tel:911"><i class="fas fa-phone-alt"></i> Call 911</a></li>
+                    <li><a href="tel:18006213362"><i class="fas fa-phone"></i> FEMA: 1-800-621-3362</a></li>
+                    <li><a href="tel:18007332762"><i class="fas fa-ambulance"></i> Red Cross: 1-800-733-2767</a></li>
+                    <li><a href="tel:18009898535"><i class="fas fa-gavel"></i> Wildfire Claims Helpline</a></li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2>Apply for Financial Help</h2>
+                <ul>
+                    <li><a href="https://www.disasterassistance.gov/" target="_blank"><i class="fas fa-exclamation-circle"></i> FEMA Assistance</a></li>
+                    <li><a href="https://www.redcross.org" target="_blank"><i class="fas fa-ambulance"></i> Red Cross Assistance</a></li>
+                    <li><a href="https://www.nrdc.org/resources/california-fire-recovery-funding" target="_blank"><i class="fas fa-fire"></i> Fire Relief Grants</a></li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2>Talk to a Counselor</h2>
+                <!-- Directly link to a helpline number -->
+                <a href="tel:18007333270"> <!-- Example: Call this helpline -->
+                    <button>
+                        <i class="fas fa-phone-alt"></i> Call Emotional Support
+                    </button>
+                </a>
+            </div>            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
